@@ -3,7 +3,7 @@ package sms_practice;
 import com.ish.genericutility.ExcelUtility;
 import com.ish.genericutility.FileUtility;
 
-public class Test {
+public class Test1 {
 	public static void main(String[] args) throws Throwable {
 		ExcelUtility eLib = new ExcelUtility();
 		FileUtility fLib = new FileUtility();

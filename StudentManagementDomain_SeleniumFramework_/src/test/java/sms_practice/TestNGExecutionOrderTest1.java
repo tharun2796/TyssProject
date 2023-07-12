@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
-public class TestNGExecutionOrderTest {
+public class TestNGExecutionOrderTest1 {
 	
 	@BeforeSuite
 	public void beforeSuite(){
