@@ -35,7 +35,7 @@ public class HomePage {
 	@FindBy(xpath="//span[.='Timetable']")
 	private WebElement timetableLink;
 
-	@FindBy(xpath="//span[.='Ingenious Developer1']")
+	@FindBy(xpath="//span[@class='hidden-xs']")
 	private WebElement adminDropdown;
 
 	@FindBy(linkText = "Sign out")
