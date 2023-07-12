@@ -27,7 +27,7 @@ public class CreateExamTest extends BaseClass {
 
 		String EXAMNAME = eLib.getDataFromExcelBasedTestId(excelFilePath, "exam" , "tc_01", "ExamName")+ randomNum;
 
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
 
 		//To navigate to CreateExamPage
 		HomePage hp = new HomePage(driver);
@@ -43,7 +43,7 @@ public class CreateExamTest extends BaseClass {
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.visibilityOf(visibleText));
 
-	    Assert.fail();
+	    //Assert.fail();
 		
 		cp.getSearchEditTxt().sendKeys(EXAMNAME);
 		String actualExamName = cp.getFetchExamName().getText();

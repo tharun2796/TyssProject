@@ -25,17 +25,6 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- sms_test.CreateExamTimetableTest -->
-      <class name="sms_test.CreateTeacherTest">
-        <methods>
-          <include name="createTeacher"/>
-          <include name="connectToDB"/>
-          <include name="openBrowser"/>
-          <include name="loginToApp"/>
-          <include name="logoutToApp"/>
-          <include name="closeDB"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- sms_test.CreateTeacherTest -->
       <class name="sms_test.CreateExamTest">
         <methods>
           <include name="connectToDB"/>
