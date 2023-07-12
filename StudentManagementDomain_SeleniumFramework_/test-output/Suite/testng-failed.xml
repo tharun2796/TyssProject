@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="smokeTest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="sms_test.CreateExamTimetableTest">
+        <methods>
+          <include name="connectToDB"/>
+          <include name="openBrowser"/>
+          <include name="loginToApp"/>
+          <include name="createExamTimetable"/>
+          <include name="logoutToApp"/>
+          <include name="closeDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- sms_test.CreateExamTimetableTest -->
+      <class name="sms_test.CreateExamTest">
+        <methods>
+          <include name="connectToDB"/>
+          <include name="openBrowser"/>
+          <include name="loginToApp"/>
+          <include name="editExam"/>
+          <include name="createExam"/>
+          <include name="logoutToApp"/>
+          <include name="closeDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- sms_test.CreateExamTest -->
+      <class name="sms_test.CreateTeacherTest">
+        <methods>
+          <include name="createTeacher"/>
+          <include name="connectToDB"/>
+          <include name="openBrowser"/>
+          <include name="loginToApp"/>
+          <include name="logoutToApp"/>
+          <include name="closeDB"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- sms_test.CreateTeacherTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
