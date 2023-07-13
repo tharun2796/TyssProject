@@ -31,7 +31,7 @@ public class BaseClass {
 	 * To connect to MySQL database
 	 * @throws SQLException
 	 */
-	@BeforeSuite
+	@BeforeSuite(groups={"smokeTest","regresTest"})
 	public void connectToDB() throws SQLException {
 		dLib.connectDB();
 		System.out.println("Database is Connected");	
@@ -41,17 +41,22 @@ public class BaseClass {
 	 * To open the Browser
 	 * @throws Throwable
 	 */
-	@BeforeClass
+	@BeforeClass(groups={"smokeTest","regresTest"})
 	public void openBrowser() throws Throwable {
 		envFilePath = fLib.getFilePathFromPropertiesFile("projectConfigDataFilePath");
 		String BROWSER = fLib.getDataFromProperties(envFilePath,"browser");
 		String URL = fLib.getDataFromProperties(envFilePath,"url");
-        WebDriverManager.chromedriver().setup();
-		if(BROWSER.equalsIgnoreCase("chrome")) {		
+    //  String BROWSER =System.getProperty("browser");
+    //  String URL =System.getProperty("url");
+		
+        if(BROWSER.equalsIgnoreCase("chrome")) {		
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if(BROWSER.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}else if(BROWSER.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
 		}else {
 			driver = new ChromeDriver();
@@ -63,7 +68,7 @@ public class BaseClass {
 		System.out.println("Browser has been successfully Launched");	
 	}
 
-	@BeforeMethod
+	@BeforeMethod(groups={"smokeTest","regresTest"})
 	public void loginToApp() throws Throwable {
 		excelFilePath = fLib.getFilePathFromPropertiesFile("testScriptDataFilePath");
 		String USERNAME = fLib.getDataFromProperties(envFilePath,"username");
@@ -77,7 +82,7 @@ public class BaseClass {
 	/**
 	 * To logout from the application
 	 */
-	@AfterMethod
+	@AfterMethod(groups={"smokeTest","regresTest"})
 	public void logoutToApp() {
 		HomePage hp = new HomePage(driver);
 		hp.logout(driver);
@@ -87,7 +92,7 @@ public class BaseClass {
 	/**
 	 * To close the browser
 	 */
-	@AfterClass
+	@AfterClass(groups={"smokeTest","regresTest"})
 	public void closeBrowser() {
 		driver.close();
 		System.out.println("Browser has been closed");
@@ -97,7 +102,7 @@ public class BaseClass {
 	 * to close the MySQL database
 	 * @throws SQLException
 	 */
-	@AfterSuite
+	@AfterSuite(groups={"smokeTest","regresTest"})
 	public void closeDB() throws SQLException {
 		dLib.closeDB();
 		System.out.println("Database is closed");
