@@ -19,7 +19,7 @@ import com.ish.objectrepository.HomePage;
 @Listeners(com.ish.genericutility.ListenerImplementaion.class)
 public class CreateExamTest extends BaseClass {
 
-	@Test
+	@Test(groups={"smokeTest","regresTest"})
 	public void createExam() throws Throwable {
 
 		//test script data
@@ -52,7 +52,7 @@ public class CreateExamTest extends BaseClass {
 		Reporter.log(actualExamName+" is Created and verified",true);
 	}
 
-	@Test   
+	@Test(groups={"smokeTest","regresTest"})   
 	public void editExam() {
 		Reporter.log("Edit Exam is done",true);
 	

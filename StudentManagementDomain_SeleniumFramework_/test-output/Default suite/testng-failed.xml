@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sms_test.CreateExamTimetableTest">
+      <class name="sms_test.CreateExamTest">
         <methods>
           <include name="connectToDB"/>
           <include name="openBrowser"/>
           <include name="loginToApp"/>
-          <include name="createExamTimetable"/>
+          <include name="editExam"/>
           <include name="closeDB"/>
           <include name="logoutToApp"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- sms_test.CreateExamTimetableTest -->
+      </class> <!-- sms_test.CreateExamTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

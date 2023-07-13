@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Saran S_834 is Verified and pass]]>
+      <![CDATA[Edit Exam is done]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-07-12T18:23:26 IST" name="Default suite" finished-at="2023-07-12T18:24:07 IST" duration-ms="40928">
+  <suite started-at="2023-07-13T11:46:24 IST" name="Default suite" finished-at="2023-07-13T11:46:51 IST" duration-ms="26734">
     <groups>
       <group name="regresTest">
-        <method signature="CreateTeacherTest.createTeacher()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" name="createTeacher" class="sms_test.CreateTeacherTest"/>
+        <method signature="CreateExamTest.editExam()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" name="editExam" class="sms_test.CreateExamTest"/>
       </group> <!-- regresTest -->
       <group name="smokeTest">
-        <method signature="CreateTeacherTest.createTeacher()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" name="createTeacher" class="sms_test.CreateTeacherTest"/>
+        <method signature="CreateExamTest.editExam()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" name="editExam" class="sms_test.CreateExamTest"/>
       </group> <!-- smokeTest -->
     </groups>
-    <test started-at="2023-07-12T18:23:26 IST" name="Default test" finished-at="2023-07-12T18:24:07 IST" duration-ms="40928">
-      <class name="sms_test.CreateTeacherTest">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" started-at="2023-07-12T18:23:25 IST" name="connectToDB" finished-at="2023-07-12T18:23:26 IST" duration-ms="892" status="PASS">
+    <test started-at="2023-07-13T11:46:24 IST" name="Default test" finished-at="2023-07-13T11:46:51 IST" duration-ms="26734">
+      <class name="sms_test.CreateExamTest">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" started-at="2023-07-13T11:46:23 IST" name="connectToDB" finished-at="2023-07-13T11:46:24 IST" duration-ms="861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" started-at="2023-07-12T18:23:26 IST" name="openBrowser" finished-at="2023-07-12T18:23:45 IST" duration-ms="18247" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" started-at="2023-07-13T11:46:24 IST" name="openBrowser" finished-at="2023-07-13T11:46:47 IST" duration-ms="22199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="loginToApp()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" started-at="2023-07-12T18:23:45 IST" name="loginToApp" finished-at="2023-07-12T18:23:47 IST" duration-ms="2690" status="PASS">
+        <test-method is-config="true" signature="loginToApp()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" started-at="2023-07-13T11:46:47 IST" name="loginToApp" finished-at="2023-07-13T11:46:49 IST" duration-ms="2319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApp -->
-        <test-method signature="createTeacher()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" started-at="2023-07-12T18:23:47 IST" name="createTeacher" finished-at="2023-07-12T18:24:05 IST" duration-ms="17400" status="PASS">
+        <test-method signature="editExam()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" started-at="2023-07-13T11:46:49 IST" name="editExam" finished-at="2023-07-13T11:46:49 IST" duration-ms="25" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Saran S_834 is Verified and pass]]>
+              <![CDATA[Edit Exam is done]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createTeacher -->
-        <test-method is-config="true" signature="logoutToApp()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" started-at="2023-07-12T18:24:05 IST" name="logoutToApp" finished-at="2023-07-12T18:24:06 IST" duration-ms="1486" status="PASS">
+        </test-method> <!-- editExam -->
+        <test-method is-config="true" signature="logoutToApp()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" started-at="2023-07-13T11:46:49 IST" name="logoutToApp" finished-at="2023-07-13T11:46:51 IST" duration-ms="1456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutToApp -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" started-at="2023-07-12T18:24:06 IST" name="closeBrowser" finished-at="2023-07-12T18:24:07 IST" duration-ms="848" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" started-at="2023-07-13T11:46:51 IST" name="closeBrowser" finished-at="2023-07-13T11:46:51 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="closeDB()[pri:0, instance:sms_test.CreateTeacherTest@5158b42f]" started-at="2023-07-12T18:24:09 IST" name="closeDB" finished-at="2023-07-12T18:24:09 IST" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="closeDB()[pri:0, instance:sms_test.CreateExamTest@399f45b1]" started-at="2023-07-13T11:46:51 IST" name="closeDB" finished-at="2023-07-13T11:46:51 IST" duration-ms="26" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDB -->
-      </class> <!-- sms_test.CreateTeacherTest -->
+      </class> <!-- sms_test.CreateExamTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
