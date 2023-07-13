@@ -25,18 +25,17 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- sms_test.CreateExamTimetableTest -->
-      <class name="sms_test.CreateExamTest">
+      <class name="sms_test.CreateTeacherTest">
         <methods>
+          <include name="createTeacher"/>
           <include name="connectToDB"/>
           <include name="openBrowser"/>
           <include name="loginToApp"/>
-          <include name="editExam"/>
-          <include name="createExam"/>
           <include name="logoutToApp"/>
           <include name="closeDB"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- sms_test.CreateExamTest -->
+      </class> <!-- sms_test.CreateTeacherTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
