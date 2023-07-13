@@ -46,8 +46,10 @@ public class BaseClass {
 		envFilePath = fLib.getFilePathFromPropertiesFile("projectConfigDataFilePath");
 		String BROWSER = fLib.getDataFromProperties(envFilePath,"browser");
 		String URL = fLib.getDataFromProperties(envFilePath,"url");
-        
-		if(BROWSER.equalsIgnoreCase("chrome")) {		
+    //  String BROWSER =System.getProperty("browser");
+    //  String URL =System.getProperty("url");
+		
+        if(BROWSER.equalsIgnoreCase("chrome")) {		
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}else if(BROWSER.equalsIgnoreCase("firefox")) {
